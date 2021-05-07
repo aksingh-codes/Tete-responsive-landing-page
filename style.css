@@ -1,0 +1,702 @@
+:root {
+    --primary-color: #F1FCF4;
+    --secondary-color: #FBB480;
+
+    --primary-text-color:black;
+    --secondary-text-color:white;
+
+    --default-padding: 3rem;
+    --secondary-padding: 10rem;
+    --additional-padding: 7rem;
+
+    /* default + additional = secondary */
+    
+    --default-border-radius: 7px;
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+    /* overflow-x: hidden; */
+}
+
+
+.company-name{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    font-weight:900;
+    color: #1B3B32;
+}
+
+h1{
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+h2{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight:600;
+    line-height: 1.4;
+}
+
+h3{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+p{
+    /* margin: 0; */
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+#nav{
+    background: #73FAD5;
+    padding: 20px var(--default-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    /* box-shadow: 3px 3px 15px black;
+    border-radius: var(--default-border-radius); */
+}
+
+#nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    width: 600px;
+}
+
+#nav ul a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #1B3B32;
+}
+
+#nav ul a:hover{
+    transform: translateY(-10%);
+}
+
+#nav ul button{
+    border-style: none;
+    border-radius: 0%;
+    background: #fff;
+    width: 100px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+    box-shadow: 1px 0px 3px gainsboro;
+    border-radius: var(--default-border-radius);
+}
+
+#nav ul button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#nav .hamburger{
+    display: none;
+    background: #fff;
+    padding: 2px;
+    width: 50px;
+    text-align: center;
+    border-radius: var(--default-border-radius);
+}
+
+#nav .hamburger:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #387A69;
+}
+
+
+#header{
+    height: 800px;
+    background: #73FAD5;
+    padding: 0 var(--default-padding) 0;
+    border-bottom-left-radius: var(--default-border-radius);
+    border-bottom-right-radius: var(--default-border-radius);
+}
+
+#header .container{
+    
+
+    background-image: url(images/jason-leung-Xaanw0s0pMk-unsplash.jpg);
+    
+    background-size: cover;
+    height: 100%;  
+    position: relative;
+
+    /* header padding (3rem) + var(--additional-padding) {7rem} = 10rem {secondary padding} */
+    padding: var(--additional-padding); 
+    height: 670px;
+    z-index: 50;
+
+    border-radius: var(--default-border-radius);
+}
+
+
+
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: "showText showImage";
+    position: absolute;
+    color: #ffffff;
+    
+    width: 86%;
+}
+
+.show-text{
+    grid-area: showText;
+}
+.show-image{
+    grid-area: showImage;
+}
+
+.orange-crowd{
+    color: var(--secondary-color);
+}
+
+.title p{
+    color: #e7e7e7;
+}
+
+.title button{
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: #71360D;
+    background: #FBB480;
+    height: 50px;
+    width: 150px;
+    border-style: none;
+    border-radius: 0;
+    padding: 8px;
+    font-size: 1.2rem;
+
+    box-shadow: 2px 0px 5px #71360D;
+    border-radius: var(--default-border-radius);
+}
+
+.title button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.show-image img{
+    transform: rotate(30deg);
+    width: 100%;
+    z-index: 80;
+}
+.show-image{
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
+#ratings{
+    /* no padding so it will get header padding which is default padding */
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    position: relative;
+    z-index: 100;
+
+    padding-bottom: 200px;
+}
+
+.customers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #F6F7F9;
+    text-align: center;
+
+    border-radius: var(--default-border-radius);
+    
+}
+
+.customers div{
+    padding-top: 10px;
+    box-shadow: 0.01px 0 0.5px black;
+}
+
+.customers p{
+    color: #757575;
+}
+
+.orders{
+    background: #FBB480;
+    color:#71360D;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0.01px 0 1px #71360D;
+
+    border-radius: var(--default-border-radius);
+}
+
+
+
+
+
+
+#press{
+    margin-top: 500px;
+    padding: 0 var(--secondary-padding) 50px;
+    background:#ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 130;
+}
+
+#press img{
+    height: 70px;
+}
+
+.press-images{
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#features{
+    padding: 100px var(--secondary-padding) 0px;
+}
+
+#features header{
+    text-align: center;
+}
+
+#features .wrapper.steps{
+
+    margin: 100px 0rem;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "step1-text step1-image"
+    "step2-image step2-text"
+    "step3-text step3-image"
+    ;
+
+    gap: 2rem;
+
+    row-gap: 6rem;
+    text-align: center;
+    
+}
+
+.wrapper .card{
+    box-shadow: 0.5px 0.5px 5px black;
+    border-radius: var(--default-border-radius);
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .card:hover{
+    transform: scale(1.05);
+}
+
+.wrapper .card.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .card.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wrapper.steps img{
+    width: 270px;
+    margin: 10px 0;
+}
+
+.wrapper.steps h2+p{
+    width: 300px;
+}
+
+.wrapper .step1-image{
+    grid-area: step1-image;
+}
+.wrapper .step2-image{
+    grid-area: step2-image;
+}
+.wrapper .step3-image{
+    grid-area: step3-image;
+}
+.wrapper .step1-text{
+    grid-area: step1-text;
+}
+.wrapper .step3-text{
+    grid-area: step3-text;
+}
+.wrapper .step3-text{
+    grid-area: step3-text;
+}
+
+
+
+#testimonials{
+
+    margin: 0 var(--default-padding);
+    padding: 100px var(--additional-padding);
+    background-image: linear-gradient(to right top, #1B3B32, #387A69, #56BA9F, #67E0C0, #73FAD5);
+    color: #FFFFFF;
+    border-radius: var(--default-border-radius);
+}
+
+#testimonials header{
+    margin-bottom: 50px;
+}
+
+.carousel .slide{
+    display: none;
+}
+
+.carousel .active{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 20px 0 #063940;
+    backdrop-filter: blur( 0.1px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: #fff;
+
+    border-radius: var(--default-border-radius);
+}
+
+.carousel img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border-radius: 50%;
+    padding-bottom: 8px;
+}
+
+.slide .human{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slide .human h3{
+    padding-left: 20px;
+}
+
+.slide .stars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars i{
+    color: gold;
+}
+
+
+#cta{
+    padding: 150px var(--secondary-padding);
+    text-align: center;
+}
+
+#cta form{
+  background: #F6F7F9;
+  margin: 5rem 0 0;
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-radius: var(--default-border-radius);
+  
+}
+
+#cta form input{
+    padding: 10px;
+    background: #F6F7F9;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.icon-and-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:#757575;
+}
+
+#cta form button{
+    background: #FBB480;
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    border-radius: 0;
+    padding: 8px;
+    color: #71360D;
+    font-size: 1.5rem;
+    box-shadow: 2px 3px 5px #90A8AC;
+
+    border-radius: var(--default-border-radius);
+
+}
+
+#cta form button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+#footer{
+    margin: 0 var(--default-padding);
+    padding: 100px var(--additional-padding) 50px;
+    background: #F6F7F9;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    column-gap: 30px;
+    align-items: baseline;
+
+    border-radius: var(--default-border-radius);
+}
+
+#footer .details p{
+    color: #757575;
+}
+
+
+#footer .social i{
+    background: #c0c0c0;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px 20px 0 0;
+}
+
+#footer .social i:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+
+#footer .other-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#footer .other-links ul{
+    list-style: none;
+    padding-left: 0;
+    color: #757575;
+    line-height: 1.5;
+}
+
+#footer ul li{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+
+#footer ul li:hover{
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1025px) {
+
+    :root{
+
+        /* --default-padding: 3rem;
+        --secondary-padding: 10rem;
+        --additional-padding: 7rem; */
+
+        --default-padding: 2rem;
+        --additional-padding: 3rem; 
+        --secondary-padding: 5rem;
+
+    }
+
+    #nav{
+        align-items: flex-start;
+    }
+
+    #nav div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 25px 0;
+        gap: 20px;
+    }
+    
+
+    #nav ul{
+        margin: 0 0;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+
+        width: auto;
+        display: none;
+    }
+
+    #nav ul.active{
+        display: flex;
+    }
+
+    #nav .hamburger{
+        display: block;
+    }
+
+    #testimonials{
+        text-align: center;
+    }
+
+    #header{
+        height: 700px;
+        text-align: center;
+    }
+
+    #header .title{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "showText"
+            "showImage"
+        ;
+
+        gap: 20px;
+    }
+
+    .show-image img{
+        transform: rotate(0deg);
+    }
+
+    #header #ratings{
+        grid-template-columns: 1fr; 
+    }
+
+    #press .press-images{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #features{
+        padding-bottom: 100px;
+    }
+
+    #features .wrapper.steps{
+        display: grid;
+
+        margin: 0 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "step1-text"
+        "step1-image"
+
+        "step2-text"
+        "step2-image"
+
+        "step3-text"
+        "step3-image"
+        ;
+         row-gap: 3rem;
+    }
+
+    #features .wrapper.steps .card{
+        text-align: center;
+    }
+    #features .wrapper.steps .card.text{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    :root{
+
+        /* --default-padding: 3rem;
+        --secondary-padding: 10rem;
+        --additional-padding: 7rem; */
+
+        /* --default-padding: 2rem;
+        --additional-padding: 3rem; 
+        --secondary-padding: 5rem; */
+
+        --default-padding: 0.3rem;
+        --additional-padding: 1.7rem; 
+        --secondary-padding: 2rem;
+    }
+
+    #footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 50px;
+
+        padding-bottom: 0px;
+    }
+    #footer .other-links{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:411px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    #cta form{
+        flex-direction: column;
+        align-items: center;
+    }
+    #cta form .icon-and-input{
+        flex-direction: column;
+    }
+    #cta input{
+        text-align: center;
+    }
+}
