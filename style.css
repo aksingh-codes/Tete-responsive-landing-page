@@ -11,7 +11,7 @@
 
     /* default + additional = secondary */
     
-    --default-border-radius: 7px;
+    --default-border-radius: 20px;
   }
 
 
@@ -179,7 +179,7 @@ p{
 }
 
 .title p{
-    color: #e7e7e7;
+    color: #fffbf4;
 }
 
 .title button{
@@ -239,12 +239,11 @@ p{
     text-align: center;
 
     border-radius: var(--default-border-radius);
-    
+    box-shadow: 0.01px 0 1px black;
 }
 
 .customers div{
     padding-top: 10px;
-    box-shadow: 0.01px 0 0.5px black;
 }
 
 .customers p{
@@ -496,7 +495,8 @@ p{
     column-gap: 30px;
     align-items: baseline;
 
-    border-radius: var(--default-border-radius);
+    border-top-left-radius: var(--default-border-radius);
+    border-top-right-radius: var(--default-border-radius);
 }
 
 #footer .details p{
@@ -614,7 +614,14 @@ p{
 
     #header #ratings{
         grid-template-columns: 1fr; 
+        padding-bottom: 100px;
     }
+
+    #press {
+        margin-top: 350px;
+        padding: 0 var(--secondary-padding) 0px;
+    }
+    
 
     #press .press-images{
         flex-wrap: wrap;
@@ -622,6 +629,7 @@ p{
     }
 
     #features{
+        padding: 50px var(--secondary-padding) 0px;
         padding-bottom: 100px;
     }
 
@@ -649,6 +657,24 @@ p{
     #features .wrapper.steps .card.text{
         padding: 15px 0;
     }
+
+    #testimonials {
+        padding: 50px var(--additional-padding);
+    }
+
+    .slide .human {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cta {
+        padding: 50px var(--secondary-padding);
+    }
+
+    #footer {
+        padding: 50px var(--additional-padding) 50px;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -663,8 +689,8 @@ p{
         --additional-padding: 3rem; 
         --secondary-padding: 5rem; */
 
-        --default-padding: 0.3rem;
-        --additional-padding: 1.7rem; 
+        --default-padding: 0.6rem;
+        --additional-padding: 1.4rem; 
         --secondary-padding: 2rem;
     }
 
@@ -680,7 +706,7 @@ p{
         align-items: center;
         gap: 20px;
     }
-    
+
     #cta form{
         flex-direction: column;
         align-items: center;
@@ -691,7 +717,6 @@ p{
     #cta input{
         text-align: center;
     }
-
 }
 
 
