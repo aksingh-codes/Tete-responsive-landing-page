@@ -680,15 +680,7 @@ p{
         align-items: center;
         gap: 20px;
     }
-
-}
-
-
-@media screen and (max-width:411px) {
-    h1{
-        font-size: 3rem;
-    }
-
+    
     #cta form{
         flex-direction: column;
         align-items: center;
@@ -698,5 +690,13 @@ p{
     }
     #cta input{
         text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:411px) {
+    h1{
+        font-size: 3rem;
     }
 }
