@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- theme for mobile devices -->
     <meta name="theme-color" content="#73FAD5">
+    
+    <!-- page title -->
     <title>Tete - Landing Page</title>
 
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,900&display=swap" rel="stylesheet">
 
+    <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- navbar on the top -->
     <div id="nav">
+
+        <!-- company name -->
         <header>
             <h1 class="company-name">Tete</h1>
         </header>
 
+        <!-- division contains hamburger menu and important links -->
         <div>
-
             <i class="hamburger fa-2x fas fa-bars"></i>
             <ul>
-                
                 <a href="#">Home</a>
                 <a href="#">Services</a>
                 <a href="#">Blog</a>
@@ -36,40 +43,41 @@
                 <a href="#">FAQ</a>
                 <button type="button">
                     LOGIN
-                </button>
-                
+                </button>                
             </ul>
         </div>
         
     </div>
 
 
+    <!-- Header Section -->
     <section id="header">
-        <div class="container">
         
+        <!-- this container will be on top of header and have a background image -->
+        <div class="container">
+            <!-- {.title} will be absolute and on top of container .title will be a grid -->
             <div class="title">
+                <!-- it is the text part -->
                 <div class="show-text">
                     <h1>Personalize your card
                         and stand out from
-                        the <span class="orange-crowd">crowd.</span> 
+                        the <span class="orange-crowd"><h1>crowd.</h1></span> 
                     </h1>
                     <p>Personalize your card with your taste and make it different</p>
                     <button type="button">
                         Learn more
                     </button>
                 </div>
-                
+                <!-- it is an credit card image in .title -->
                 <div class="show-image">
                     <img src="images/credit-card (2).png" alt="">
                 </div>
             </div>
-
-        
         </div>
 
-
+        <!-- this will be below .title grid it will be grid -->
         <div id="ratings">
-        
+
             <div class="customers">
                 <div>
                     <h2>258.000</h2>
@@ -80,21 +88,22 @@
                     <p>Cards has been printed</p>
                 </div>
             </div>
+            
             <div class="orders">
                 <h2>20.560</h2>
                 <p>Orders in progress</p>
             </div>
             
         </div>
-
-
+    
     </section>
 
     
 
     
-
+    <!-- this is the press section -->
     <section id="press">
+        <!-- heading text on press -->
         <h1>Our partners</h1>
         <p>We have worked with several large companies</p>
         <div class="press-images">
@@ -106,77 +115,77 @@
         </div>
     </section>
 
+    <!-- Features section -->
     <section id="features">
-
+        <!-- heading and small text of feature section -->
         <header>
             <h1>Just with 3 simple steps</h1>
             <p>Lorem ipsum dolor, sit amet consectetur 
                 adipisicing elit. Ipsam, adipisci?</p>
-            
         </header>
         
+        <!-- .wrapper is grid will contain steps -->
         <div class="wrapper steps">
-
-
+            
+            <!-- Step1 -->
             <div class="step1-text card text">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione?</p>
             </div>
-
             <div class="step1-image card image">
                 <img src="https://media.giphy.com/media/jJeLpmVIW9k4whPjLs/giphy.gif" alt="" >
             </div>
             
-
-            
-            
+            <!-- Step2 -->
             <div class="step2-text card text">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione?</p>
             </div>
-
             <div class="step2-image card image">
                 <img src="https://media.giphy.com/media/nUmL84A3Y9TDUL4ygS/giphy.gif" alt="" >
             </div>
 
-
+            <!-- Step3 -->
             <div class="step3-text card text">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione?</p>
             </div>
-
             <div class="step3-image card image">
                 <img src="https://media.giphy.com/media/U7KEnh6df4Kidklw0N/giphy.gif" alt="">
             </div>
-            
-            
-            
-            
+                        
         </div>
 
     </section>
 
+    <!-- Testimonial Section -->
     <section id="testimonials">
-
+        
+        <!-- header of testimonial section -->
         <header>
             <h1>Our happy customers.</h1>
             <p>What they says about our services?</p>
         </header>
 
+        <!-- carousel contain slides -->
         <div class="carousel">
+            
+            <!-- Slide 1 -->
             <div class="slide one active">
                 <div class="human">
                     <img src="images/human faces/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="">
                     <h3>Lorem ipsum</h3>
                 </div>
+
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, tempora sequi! Expedita aliquam perferendis libero!</p>
                 <div class="stars">
                     <i class="fas fa-star"> 4.5/5.0</i>
                     <p class="date">5 May 2021</p>
                 </div>
             </div>
+
+            <!-- Slide 2 -->
             <div class="slide two">
-                
                 <div class="human">
                     <img src="images/human faces/joshua-oluwagbemiga-8qFarlWZY-U-unsplash.jpg" alt="">
                     <h3>Lorem ipsum</h3>
@@ -188,8 +197,9 @@
                     <p class="date">5 May 2021</p>
                 </div>
             </div>
-            <div class="slide three">
 
+            <!-- Slide 3 -->
+            <div class="slide three">
                 <div class="human">
                     <img src="images/human faces/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="">
                     <h3>Lorem ipsum</h3>
@@ -202,13 +212,19 @@
                     <p class="date">5 May 2021</p>
                 </div>
             </div>
+
         </div>
+
     </section>
 
+    <!-- Call to action section -->
     <section id="cta">
+
+        <!-- Heading and p -->
         <h1>Subscribe to our newsletter</h1>
         <p>Stay up to date with our weekly newsletter</p>
 
+        <!-- Form -->
         <form action="" method="post">
             <div class="icon-and-input">
                 <i class="far fa-envelope"></i>
@@ -217,12 +233,14 @@
             </div>
             <button type="submit">Submit</button>
         </form>
+
     </section>
 
+    <!-- Footer Section -->
     <section id="footer">
 
+        <!-- compan name, address , phone no , social media handles -->
         <div class="details">
-
             <h1 class="company-name">Tete</h1>
             <p class="address">Lorem ipsum dolor, sit amet consectetur 
                 adipisicing elit. Beatae, autem?</p>
@@ -234,9 +252,9 @@
                 <i class="fab fa-reddit-alien fa-2x"></i>
                 <i class="fas fa-envelope fa-2x"></i>
             </div>
-        
         </div>
             
+        <!-- other links -->
         <div class="other-links">
             
             <div class="company">
@@ -248,6 +266,7 @@
                     <li>Career</li>
                 </ul>
             </div>
+
             <div class="product">
                 <h3>Product</h3>
                 <ul>
@@ -257,6 +276,7 @@
                     <li>Teuingnaan</li>
                 </ul>
             </div>
+            
             <div class="legal">
                 <h3>Legal</h3>
                 <ul>
@@ -269,7 +289,8 @@
 
     </section>
 
-<script src="index.js"></script>
+    <!-- javascript linked -->
+    <script src="index.js"></script>
 
 </body>
 </html>
